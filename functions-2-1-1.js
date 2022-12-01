@@ -18,9 +18,18 @@
 // /*
 // 2. Define a function maxOfThree that takes three numbers as arguments and returns the largest of them.
 // */
-// maxOfThree = () => {
-//   // ADD YOUR CODE HERE
-// };
+maxOfThree = (num1, num2, num3) => {
+  if(num1 > num2 && num1 > num3) {
+    return num1
+  } else if (num2 > num1 && num2 > num3) {
+    return num2
+  } else if (num3 > num1 && num3 > num1) {
+    return num3
+  } else (num1 === num2 || num1 === num3 || num2 === num3) 
+     console.log(`Two of your numbers are the same! Please choose different numbers`)
+  
+};
+console.log(maxOfThree(32, 71, 18))
 
 // /*
 // 3. Write a function isCharacterAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
