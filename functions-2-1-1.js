@@ -103,22 +103,30 @@
 // The reverse() method reverses an array in place. The first array element becomes the last and the last becomes the first.
 // The join() method joins all elements of an array into a string.
 
-let string1 = "reverse me!"
+// let string1 = "reverse me!"
 
-reverseString = (str) => {
-  return str.split("").reverse().join("");
+// reverseString = (str) => {
+//   return str.split("").reverse().join("");
   
-};
+// };
 
-console.log(reverseString(string1))
+// console.log(reverseString(string1))
 
 // /*
 // 7. Write a function findLongestWord that takes an array of words and returns the length of the longest one.
 // */
-// findLongestWord = () => {
-//   // ADD YOUR CODE HERE
-// };
 
+// findLongestWord = (wordList) => {
+//   let longestWord = wordList [0];
+//   for(let i =1; i < wordList.length; i++) {
+//       if(wordList[i].length > longestWord.length) longestWord = wordList[i];
+// }
+// return longestWord
+// }
+
+// let wordList1 = ["bounce", "anti-establishment", "water", "cheetos", "tube"]
+
+// console.log(findLongestWord(wordList1))
 // /*
 // 8. Write a function filterLongWords that takes an array of words and a number i and returns the array of words that are longer than i characters long.
 // */
