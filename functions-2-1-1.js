@@ -38,38 +38,79 @@
 
 //For this one, I looked at Total recall to try and figure out why my old code didn't work. I figured out I had forgotten to write it in a function. Whoops!
 
-let vowels = ["a", "e", "i", "o", "u"];
-isCharacterAVowel = (letter) => {
-let input = letter.toLowerCase();
-if(vowels.includes(input) === true) {
-  return true
-} else {
-  return false
-}
-}
+// let vowels = ["a", "e", "i", "o", "u"];
+// isCharacterAVowel = (letter) => {
+// let input = letter.toLowerCase();
+// if(vowels.includes(input) === true) {
+//   return true
+// } else {
+//   return false
+// }
+// }
 
-console.log(isCharacterAVowel("f"))
+// console.log(isCharacterAVowel("f"))
 
 
 // /*
 // 4. Define a function sumArray and a function multiplyArray that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return 24.
 // */
 
-// sumArray = () => {
-//   // ADD YOUR CODE HERE
+// // How to add items together from an array
+// array.forEach(item => mySet.add(item))
+
+// // alternative, without anonymous arrow function
+// array.forEach(mySet.add, mySet)
+
+
+
+
+// sumArray = (numbers) => {
+//   let numArray1 = [numbers]
+//   numArray1.forEach(number => Math.sum(number + number))
+
 // };
+// console.log(sumArray(numArray1[2,6,7]))
+
+// multiplyArray = (numArray2) => {
+//   let numArray2 = []
+
+
+// };
+
 
 // /*
 // 5.Write a function that returns the number of arguments passed to the function when called.
 // */
 
+// numOfArgs = (...args) => {
+//   return args.length;
+// }
+
+// console.log(numOfArgs(3, 'w', {'doc': 'name'}))
+
+
+// function callArguments (a, b, c) => {
+//   console.log(arguments.length);
+// }
+// callArguments()
+
 // /*
 // 6. Define a function reverseString that computes the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj".
 // */
 
-// reverseString = () => {
-//   // ADD YOUR CODE HERE
-// };
+//Notes for self
+//The split() method splits a String object into an array of string by separating the string into sub strings.
+// The reverse() method reverses an array in place. The first array element becomes the last and the last becomes the first.
+// The join() method joins all elements of an array into a string.
+
+let string1 = "reverse me!"
+
+reverseString = (str) => {
+  return str.split("").reverse().join("");
+  
+};
+
+console.log(reverseString(string1))
 
 // /*
 // 7. Write a function findLongestWord that takes an array of words and returns the length of the longest one.
