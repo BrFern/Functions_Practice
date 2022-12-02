@@ -62,20 +62,34 @@
 // array.forEach(mySet.add, mySet)
 
 
+//Struggle busss
 
+sumArray = (numArray) => {
+  let sum = 0
 
-// sumArray = (numbers) => {
-//   let numArray1 = [numbers]
-//   numArray1.forEach(number => Math.sum(number + number))
+  for(let i = 0; i< numArray.length; i++){
+    sum += numArray[i]
+  }
 
-// };
-// console.log(sumArray(numArray1[2,6,7]))
+  return console.log(sum)
+ 
+};
 
-// multiplyArray = (numArray2) => {
-//   let numArray2 = []
+sumArray([45, 21, 13])
 
+//
 
-// };
+multiplyArray = (numArray2) => {
+  let product = 1
+
+  for(let i = 0; i< numArray2.length; i++) {
+    product *= numArray2[i]
+  }
+  return console.log(product)
+}
+
+multiplyArray([2, 5, 6])
+
 
 
 // /*
@@ -130,6 +144,15 @@
 // /*
 // 8. Write a function filterLongWords that takes an array of words and a number i and returns the array of words that are longer than i characters long.
 // */
-// filterLongWords = () => {
-//   // ADD YOUR CODE HERE
+// filterLongWords = (words) => {
+//   let longWord = words [0];
+//   for(let i=1; i <= words.length; i++) {
+//     if(wordList[i].length > longWord.length) longWord = words [i];
+//   }
+//   return longWord
 // };
+
+// let wordArray = ["maybe", "you", "should", "focus", "on", "practicing", "functions", "on", "your", "own"]
+
+// filterLongWords(longWord(wordArray))
+
